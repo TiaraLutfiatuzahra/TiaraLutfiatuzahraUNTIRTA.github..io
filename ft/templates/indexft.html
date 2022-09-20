@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <h1>FAKULTAS TEKNIK</h1>
+    <h2>Terdiri dari :</h2>
+    <p>Sarjana Teknik Elektro;
+        Sarjana Teknik Industri;
+        Sarjana Teknik Kimia;
+        Sarjana Teknik Mesin;
+        Sarjana Teknik Metalurgi;
+        Sarjana Teknik Sipil.</p>
+    
+        {{title | upper }} <br>
+        {% for S1 in S1 %}
+            <li>{{S1}}</li>
+        {% endfor %}
+
+{% endblock %}
